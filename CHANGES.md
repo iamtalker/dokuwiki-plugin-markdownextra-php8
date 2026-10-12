@@ -5,3 +5,8 @@
   and caused: "Array and string offset access syntax with curly braces is no longer supported".
   18 occurrences changed; behaviour is identical.
 - Nothing else was modified. Original copyright and license notices are unchanged.
+- `markdown.php`: renamed the PHP 4 style constructors `Markdown_Parser()` and
+  `MarkdownExtra_Parser()` to `__construct()` (and the `parent::` call accordingly).
+  PHP 8 no longer treats a method named like its class as a constructor, so the parser was
+  never initialised, which caused "preg_split(): Empty regular expression" warnings and
+  broken emphasis (`*em*`, `**strong**`).

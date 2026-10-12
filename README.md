@@ -3,7 +3,7 @@
 > It bundles PHP Markdown Extra by Michel Fortin (based on Markdown by John Gruber); see `License.text`.
 > This fork is not affiliated with or endorsed by the original authors or the Markdown project.
 >
-> **Changes:** `markdown.php` - replaced the removed `$str{0}` string offset syntax with `$str[0]` (18 places).
+> **Changes:** `markdown.php` - replaced the removed `$str{0}` string offset syntax with `$str[0]` (18 places), and renamed the old-style constructors to `__construct()`.
 > No other behaviour was changed. Not tested beyond manual use; see `CHANGES.md`.
 
 # PHP Markdown Extra plugin for DokuWiki
